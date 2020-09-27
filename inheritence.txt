@@ -1,0 +1,35 @@
+<?php
+//pearent class
+    class Animal{
+        public $family;
+        public $food;
+        
+        function set_family($family)
+        {
+            $this->family=$family;
+            
+        }
+        function get_family()
+        {
+            return $this->family;
+        }
+    }
+    class Dog extends Animal{
+        public function message(){
+            echo"i am dog ";
+        }
+                
+        
+    }
+     $animal = new Animal();
+     $animal->set_family("cat","rice");
+     echo $animal->get_family();
+     
+     $dog = new Dog();
+     $dog->set_family("dog","chickent"); 
+     echo '<br>';
+     $dog->message();
+     echo $dog->get_family();
+     
+    
+?>

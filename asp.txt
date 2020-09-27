@@ -1,0 +1,23 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import ="java.util.*" %>
+<%! String day[]={"monday","tueseday","wed","thursday","friday","sat","sunday"};%>
+<!DOCTYPE html>
+<%!int i;%>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <body>
+        <%Date date = new Date();%>
+        <h1>tody date</h1>
+        <p>tody date is : <%=date%></p>
+        <%
+            for(int i=0;i<day.length;i++)
+            {%>
+            <font color="red" size ="<%=i%>"><%
+                out.print(day[i]);%></font><br><%
+            }
+        %>
+    </body>
+</html>

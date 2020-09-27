@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function validation()
+		{
+			var uname=document.myform.username.value;
+			var password = document.myform.pwd.value;
+			var email = document.myform.email.value;
+
+			if (uname =="") 
+			{
+				alert("enter your name");
+				return false;
+			}
+			if (password =="")
+			 {
+			 	alert("enter password");
+			 }
+			 if(!/^[a-zA-Z0-9] +@[a-zA-Z]+(?:\.[a-zA-Z]+)*$/.test(email) )
+			 {
+			 	alert("enter valid email");
+			 	return false;
+			 	
+			 }
+			 
+			 
+
+		}
+		
+	</script>
+
+</head>
+<body>
+	<form name="myform" method="post" action="" onsubmit="return validation()">
+		username :<input type="name" name="username">
+
+		password :<input type="password" name="pwd">
+
+		email : <input type="text" name="email">
+
+		<input type="submit" name="submit">
+		
+	</form>
+
+</body>
+</html>

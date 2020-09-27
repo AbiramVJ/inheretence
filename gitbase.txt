@@ -1,0 +1,41 @@
+1.git init
+2.git config --global user.name 'Baghee'
+3.git config --global user.email 'bagheerocky@gmail.com'
+4. touch login.html
+   touch login.js
+5.git add . (all the file are will add)
+  git add login.html (perticular this file only will be add)
+6.git status
+7.git commit -am (edit mode)
+8.git init (create new respostory)
+9.git remote add origin https://github.com/Bagheerathan/internetapp.git
+10.git remote -v
+11.git push -f origin master
+
+
+
+
+practical
+opject orijented php (only heridence) extent key word
+
+labsheet 3
+q1
+
+labsheet  3-2
+javascript validation password or email
+
+labsheet 5
+reffer validation
+
+labsheet 7
+q5 same question
+ 
+last question git hub
+`
+
+
+
+
+
+
+
